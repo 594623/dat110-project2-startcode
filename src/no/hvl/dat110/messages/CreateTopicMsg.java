@@ -4,27 +4,28 @@ public class CreateTopicMsg extends Message {
 	
 	// message sent from client to create topic on the broker
 	
-	String topicName;
+	String topic;
 	
 
 	
 	// TODO: 
 	// Implement object variables - a topic is required
-	public CreateTopicMsg(String user, String topicName) {
+	public CreateTopicMsg(String user, String topic) {
 		super(MessageType.CREATETOPIC, user);
-		this.topicName=topicName;
+		this.topic=topic;
 	}
 	
 	public String getTopic(){
-		return topicName;
+		return topic;
 	}
 	
-	public void setTopic(String topicName) {
-		this.topicName=topicName;
+	public void setTopic(String topic) {
+		this.topic=topic;
 	}
 	
+	@Override
 	public String toString() {
-		return "CreateTopicMsg - Topic: " + topicName + ", Type: " + getType() + ", User: " + getUser();
+		return "CreateTopicMsg [topic=" + topic + ", type=" + getType() + ", user=" + getUser() + "]";
 	}
 	// Constructor, get/set-methods, and toString method
     // as described in the project text	

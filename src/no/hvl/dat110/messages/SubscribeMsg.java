@@ -24,8 +24,9 @@ public class SubscribeMsg extends Message {
 		this.topicName=topicName;
 	}
 	
+	@Override
 	public String toString() {
-		return "SubscribeMsg - Topic: " + topicName + ", Type: " + getType() + ", User: " + getUser();
+		return "SubscribeMsg [topic=" + topicName + ", type=" + getType() + ", user=" + getUser() + "]";
 	}
 	
 	

@@ -25,8 +25,9 @@ public class DeleteTopicMsg extends Message {
 		this.topicName=topicName;
 	}
 	
+	@Override
 	public String toString() {
-		return "DeleteTopicMsg - Topic: " + topicName + ", Type: " + getType() + ", User: " + getUser();
+		return "DeleteTopicMsg [topic=" + topicName + ", type=" + getType() + ", user=" + getUser() + "]";
 	}
 
 }

@@ -35,7 +35,8 @@ public class PublishMsg extends Message {
 		this.message = message;
 	}
 	
+	@Override
 	public String toString() {
-		return "PublishMsg - Topic: " + topic + ", Type: " + getType() + ", User: " + getUser() + ", Message: " + message;
+		return "PublishMsg [topic=" + topic + ", type=" + getType() + ", user=" + getUser() + ", message=" + message + "]";
 	}
 }

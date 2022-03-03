@@ -25,8 +25,9 @@ public class UnsubscribeMsg extends Message {
 		this.topicName=topicName;
 	}
 	
+	@Override
 	public String toString() {
-		return "UnsubscribeMsg - Topic: " + topicName + ", Type: " + getType() + ", User: " + getUser();
+		return "UnsubscribeMsg [topic=" + topicName + ", type=" + getType() + ", user=" + getUser() + "]";
 	}
 	
 	
