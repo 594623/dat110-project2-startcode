@@ -36,6 +36,6 @@ public class PublishMsg extends Message {
 	}
 	
 	public String toString() {
-		return "Topic: " + topic + ", Type: " + getType() + ", User: " + getUser() + ", Message: " + message;
+		return "PublishMsg - Topic: " + topic + ", Type: " + getType() + ", User: " + getUser() + ", Message: " + message;
 	}
 }
