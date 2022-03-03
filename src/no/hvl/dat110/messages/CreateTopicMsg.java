@@ -24,7 +24,7 @@ public class CreateTopicMsg extends Message {
 	}
 	
 	public String toString() {
-		return "Topic: " + topicName + ", Type: " + getType() + ", User: " + getUser();
+		return "CreateTopicMsg - Topic: " + topicName + ", Type: " + getType() + ", User: " + getUser();
 	}
 	// Constructor, get/set-methods, and toString method
     // as described in the project text	

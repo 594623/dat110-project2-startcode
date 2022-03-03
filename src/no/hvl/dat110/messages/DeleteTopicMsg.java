@@ -26,7 +26,7 @@ public class DeleteTopicMsg extends Message {
 	}
 	
 	public String toString() {
-		return "Topic: " + topicName + ", Type: " + getType() + ", User: " + getUser();
+		return "DeleteTopicMsg - Topic: " + topicName + ", Type: " + getType() + ", User: " + getUser();
 	}
 
 }
