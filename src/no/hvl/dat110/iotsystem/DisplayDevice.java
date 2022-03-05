@@ -16,13 +16,19 @@ public class DisplayDevice {
 		// TODO - START
 				
 		// create a client object and use it to
-		
+		Client display = new Client("Display", "localhost", 8080);
 		// - connect to the broker - use "display" as the username
+		display.connect();
 		// - create the temperature topic on the broker
+		display.createTopic(Common.TEMPTOPIC);
 		// - subscribe to the topic
+		display.subscribe(Common.TEMPTOPIC);
 		// - receive messages on the topic
+		display.receive();
 		// - unsubscribe from the topic
+		display.unsubscribe(Common.TEMPTOPIC);
 		// - disconnect from the broker
+		display.disconnect();
 		
 		// TODO - END
 		
