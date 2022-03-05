@@ -27,10 +27,13 @@ public class DisplayDevice {
 		for (int i = 0; i < COUNT; i++) {
 
 			PublishMsg dispMsg = (PublishMsg) display.receive();
-			
+
 			System.out.println(dispMsg + " degrees");
-			
-			Thread.sleep(TemperatureDevice.updateFreq);
+			try {
+				Thread.sleep(TemperatureDevice.updateFreq);
+			} catch (InterruptedException e) {
+				e.printStackTrace();
+			}
 		}
 		// - unsubscribe from the topic
 		display.unsubscribe(Common.TEMPTOPIC);
@@ -41,7 +44,7 @@ public class DisplayDevice {
 
 		System.out.println("Display stopping ... ");
 
-		throw new UnsupportedOperationException(TODO.method());
+		
 
 	}
 }
