@@ -7,7 +7,7 @@ public class TemperatureDevice {
 
 	private static final int COUNT = 10;
 	
-	final static int updateFreq = 1000;
+	final static int updateFreq = 3000;
 
 	public static void main(String[] args) throws InterruptedException {
 
